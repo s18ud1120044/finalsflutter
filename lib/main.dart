@@ -37,11 +37,13 @@ class _MyHomePageState extends State<MyHomePage> {
       _counter++;
     });
   }
+
   void _decrementCounter() {
     setState(() {
       _counter--;
     });
   }
+
   void _resetCounter() {
     setState(() {
       _counter = 0;
@@ -65,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Text(
                   '$_counter',
                   style: GoogleFonts.lobster(
-                    fontSize: 300,
+                    fontSize: 260,
                     color: Colors.black54,
                   ),
                 ),
@@ -74,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     IconButton(
-                      iconSize: 115,
+                      iconSize: 90,
                       color: Colors.blue,
                       icon: const Icon(
                         Icons.add_circle,
@@ -82,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: _incrementCounter,
                     ),
                     IconButton(
-                      iconSize: 115,
+                      iconSize: 90,
                       icon: const Icon(
                         Icons.remove_circle_outline,
                         color: Colors.blue,
@@ -104,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 fixedSize: MaterialStateProperty.all(const Size(120, 50)),
                 textStyle: MaterialStateProperty.all(
                   const TextStyle(
-                    fontSize: 24,
+                    fontSize: 20,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
